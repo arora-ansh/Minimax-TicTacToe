@@ -138,6 +138,8 @@ def minimax(board):
             if score > max_score:
                 max_score = score
                 best_move = move
+            if score == 1:
+                break
         return best_move, max_score
 
     def minplayer(board):
@@ -153,6 +155,8 @@ def minimax(board):
             if score<min_score:
                 min_score = score
                 best_move = move
+            if score == -1:
+                break
         return best_move, min_score
 
     if player(board) == X:
