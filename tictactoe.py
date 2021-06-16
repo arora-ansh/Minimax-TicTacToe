@@ -1,7 +1,3 @@
-"""
-Tic Tac Toe Player
-"""
-
 import math
 
 X = "X"
@@ -63,6 +59,7 @@ def result(board, action):
 def winner(board):
     """
     Returns the winner of the game, if there is one.
+    I sincerely apologize for the lazy implementation.
     """
     for i in range(3):
         if board[i][0] == board[i][1] and board[i][1] == board[i][2] and board[i][0] != EMPTY:
